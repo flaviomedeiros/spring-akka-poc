@@ -19,7 +19,8 @@ import java.time.Instant;
 
 /**
  * A basic event
- * Created by Flavio on 15/11/2016.
+ * @author Flavio Medeiros
+ * @since 0.0.1-SNAPSHOT
  */
 public class EventBase {
 
@@ -31,6 +32,8 @@ public class EventBase {
 
     /**
      * Instant of event instantiation
+     *
+     * @return Event generation {@link Instant}
      */
     public Instant getGeneratedAt() {
         return generatedAt;

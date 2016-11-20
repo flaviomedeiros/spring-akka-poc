@@ -79,7 +79,8 @@ public class EventController {
      *
      * @param event   Event name
      * @param payload Event payload
-     * @return
+     * @return Http status 202 (Accepted) if the call succeeds. The corresponding 4XX or 5XX codes otherwise.
+     * @see <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">Status Code Definitions</a>
      */
     @RequestMapping(value = "{event}", method = RequestMethod.POST)
     public DeferredResult<ResponseEntity> postEvent(@PathVariable("event") String event, @RequestBody String payload) {

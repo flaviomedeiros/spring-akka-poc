@@ -41,7 +41,7 @@ public class EventDecoderService {
      * Decode a known event type
      *
      * @param eventReceived The event to decode
-     * @return The decoded event or {@link  Optional#empty()}  Optional.<EventBase>empty()} if the event type is unknown
+     * @return The decoded event or {@link  Optional#empty()  Optional.empty()} if the event type is unknown
      */
     public Optional<EventBase> decode(EventReceived eventReceived) {
         Optional<EventBase> result = Optional.empty();
@@ -61,7 +61,7 @@ public class EventDecoderService {
      * Decodes a {@link #PRODUCT_ACCESSED_EVENT}
      *
      * @param eventReceived The event to decode
-     * @return The decoded event or {@link  Optional#empty()}  Optional.<EventBase>empty()} if the event type is unknown
+     * @return The decoded event or {@link  Optional#empty() Optional.empty()} if the event type is unknown
      * @see EventBase
      */
     private Optional<EventBase> processResourceAccessesEvent(EventReceived eventReceived) {
