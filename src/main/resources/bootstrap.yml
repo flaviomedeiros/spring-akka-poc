@@ -1,0 +1,14 @@
+logging:
+  file: spring-akka-poc.log
+
+spring:
+  application:
+    name: spring-akka-poc
+  cloud:
+    config:
+      label: ${SPRING_AKKA_ENV}
+      uri: ${SPRING_AKKA_ENV_CONFIG_URI}
+
+management:
+  context-path: /admin
+      
